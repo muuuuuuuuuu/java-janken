@@ -16,8 +16,7 @@ public class Main {
 		String name = sc.nextLine();
 		System.out.println("名前を入力してください！\n2人目");
 		String name2 = sc.nextLine();
-		System.out.println("それでは始めちゃってください！");
-		System.out.println("さーいしょっからっ！！！");
+		System.out.println("それでは始めちゃってください！\nさーいしょっからっ！！！");
 
 		System.out.println("1人目入力");
 		int a = sc.nextInt();
@@ -26,17 +25,9 @@ public class Main {
 
 		if(a == b) {
 			System.out.println("あいこ");
-		} else if(a == 1 && b == 2){
+		} else if ((a == 1 && b == 2) || (a == 2 && b == 3) || (a == 3 && b == 1)) {
 			System.out.println(name + "の勝ち!!!");
-		} else if(a == 2 && b == 3){
-			System.out.println(name + "の勝ち!!!");
-		} else if(a == 3 && b == 1){
-			System.out.println(name + "の勝ち!!!");
-		} else if(b == 1 && a == 2){
-			System.out.println(name2 + "の勝ち!!!");
-		} else if(b == 2 && a == 3){
-			System.out.println(name2 + "の勝ち!!!");
-		} else if(b == 3 && a == 1){
+		} else if ((b == 1 && a == 2) || (b == 2 && a == 3) || (b == 3 && a == 1)) {
 			System.out.println(name2 + "の勝ち!!!");
 		} else {
 			System.out.println("あっ！！！1,2,3以外のボタンを押しましたね？\n強制終了！！！！！");
