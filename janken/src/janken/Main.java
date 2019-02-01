@@ -23,7 +23,7 @@ public class Main {
 		System.out.println("2人目入力");
 		int b = sc.nextInt();
 
-		if((a > 3) && (b > 3)) {
+		if((a > 3) && (b > 3) || (a == 0) && (b == 0)) {
 			System.out.println("あっ！！！1,2,3以外のボタンで一緒の数字を押しましたね？\n強制終了じゃー！！");
 		} else if ((a == 1 && b == 2) || (a == 2 && b == 3) || (a == 3 && b == 1)) {
 			System.out.println(name + "の勝ち!!!");
