@@ -23,14 +23,16 @@ public class Main {
 		System.out.println("2人目入力");
 		int b = sc.nextInt();
 
-		if(a == b) {
-			System.out.println("あいこ");
+		if((a > 3) && (b > 3)) {
+			System.out.println("あっ！！！1,2,3以外のボタンで一緒の数字を押しましたね？\n強制終了じゃー！！");
 		} else if ((a == 1 && b == 2) || (a == 2 && b == 3) || (a == 3 && b == 1)) {
 			System.out.println(name + "の勝ち!!!");
 		} else if ((b == 1 && a == 2) || (b == 2 && a == 3) || (b == 3 && a == 1)) {
 			System.out.println(name2 + "の勝ち!!!");
+		} else if (a == b) {
+			System.out.println("あいこ！！");
 		} else {
-			System.out.println("あっ！！！1,2,3以外のボタンを押しましたね？\n強制終了！！！！！");
+			System.out.println("あっ！！！どっちか1人\n1,2,3以外のボタンを押しましたね？\n強制終了！！！！！");
 		}
      }
 
@@ -54,6 +56,7 @@ public class Main {
      }
 
      public static void description2() {
+       System.out.println("やれやれd(￣ ￣)");
 	   description();
 	   sca();
      }
